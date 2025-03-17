@@ -6,7 +6,8 @@
 ---
 ## Pointers
 - Preprint: 
-- UF7D Dataset: 
+- UF7D Dataset: [DropBox Link](https://www.dropbox.com/scl/fo/ab7eim7wh5ezlwfh43v6l/AHCChi7xj9stdV48AT1Ati0?rlkey=tnp2lbay9nfhe24c4qlw9gpjn&st=k4eh0s69&dl=0)
+- UStyle checkpoints and qualitative comparison files are also in the same folder
 
 ## Models and Files
 1. The model is defined in `model.py` 
