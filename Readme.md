@@ -4,16 +4,18 @@
 </div>
 
 ---
+## Pointers
+- Preprint: 
+- UF7D Dataset: 
 
 ## Models and Files
 1. The model is defined in `model.py` 
 2. Download and save the checkpoints in the `checkpoints/` directory.
-2. Our fusion model integrates content and style features via a depth-aware whitening and coloring transform (DA-WCT) blending. This model enhances waterbody stylization by fusing features from multiple scales while incorporating depth information
+3. Our fusion model integrates content and style features via a depth-aware whitening and coloring transform (DA-WCT) blending. This model enhances waterbody stylization by fusing features from multiple scales while incorporating depth information
     - The fusion models are implemented in `fusion_1to1.py` and `fusion_all.py`.
     - Guided filtering for post-processing is implemented in `utils/photo_gif.py` (adapted from the [PhotoWCT code](https://github.com/NVIDIA/FastPhotoStyle)).
-
-## Training
-`train.py` is the training code for our ResNet-based blockwise model. Usage instructions and hyperparameters are provided within the file. Fine-tuning can be performed using `finetune.py`.
+4. `train.py` is the training code for our ResNet-based blockwise model. 
+5. Fine-tuning can be performed using `finetune.py`.
 
 ---
 
