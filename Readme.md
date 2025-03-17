@@ -1,6 +1,6 @@
 # **UStyle: Waterbody Style Transfer of Underwater Scenes by Depth-Guided Feature  Synthesis**
 <div align="center">
-  <img src="images/model.png" alt="UStyle intro" width="700">
+  <img src="./model.png" alt="UStyle intro" width="700">
 </div>
 
 ---
