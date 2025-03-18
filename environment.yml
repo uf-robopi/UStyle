@@ -1,0 +1,23 @@
+name: UStyle
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10 
+  - numpy
+  - scipy
+  - scikit-image
+  - pandas
+  - matplotlib
+  - pytorch
+  - torchvision
+  - torchaudio
+  - pip
+  - pip:
+      - lpips
+      - kornia
+      - timm
+      - pytorch-msssim
+      - tensorboardx
+      - tqdm
+
