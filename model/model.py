@@ -6,6 +6,14 @@ from torchvision.models import resnet50
         
 class UStyleEncoder(nn.Module):
     def __init__(self, pretrained=True):
+        """
+        UStyleEncoder initializes a ResNet50-based encoder that extracts hierarchical
+        feature maps at different depths. These features can later be used as skip connections
+        for the decoder.
+        
+        Args:
+            pretrained (bool): If True, loads pretrained ResNet50 weights.
+        """
         super(UStyleEncoder, self).__init__()
         
         # Load Pretrained ResNet50
@@ -28,6 +36,16 @@ class UStyleEncoder(nn.Module):
         self.bottleneck = nn.Sequential(*list(resnet.layer4))  # Deepest bottleneck layer
 
     def forward(self, x):
+        """
+        Forward pass through the encoder.
+        
+        Args:
+            x (torch.Tensor): Input image tensor of shape (N, 3, H, W).
+            
+        Returns:
+            x (torch.Tensor): Output from the bottleneck layer.
+            skip_connections (list): A list of intermediate feature maps for skip connections.
+        """
         skip_connections = []
 
         x = self.stage0(x)
@@ -89,6 +107,10 @@ class UStyleEncoder(nn.Module):
         
 class UStyleDecoder(nn.Module):
     def __init__(self):
+        """
+        UStyleDecoder reconstructs an image from the bottleneck features using a series
+        of transposed convolutions. It also merges features from the encoder via skip connections.
+        """
         super(UStyleDecoder, self).__init__()
 
         # Modified transposed convolutions with output_padding=1
@@ -131,7 +153,16 @@ class UStyleDecoder(nn.Module):
         self.feats = []
 
     def forward(self, x, skip_connections):
+        """
+        Forward pass through the decoder.
         
+        Args:
+            x (torch.Tensor): Bottleneck feature map from the encoder.
+            skip_connections (list): List of feature maps from the encoder (from low to high level).
+            
+        Returns:
+            x (torch.Tensor): Reconstructed image.
+        """
         skips = list(reversed(skip_connections))
 
         # Ensure feats is correctly initialized and cleared
