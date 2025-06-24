@@ -43,8 +43,8 @@
    python3 finetune.py
 4. Inference using UStyle:
    ```bash
-   python3 inference_1to1.py
-   python3 inference_all.py
+   python3 fusion_1to1.py
+   python3 fusion_all.py
 
 ---
 
