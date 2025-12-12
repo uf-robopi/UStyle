@@ -49,13 +49,12 @@
 ---
 
 <h2>Bibliography</h2>
-<p><em>This work has been accepted for publication in the IEEE Journal of Oceanic Engineering (JOE).</em></p>
 <div id="bibtex">
   <pre>
 @article{siddique2025ustyle,
-    author={Siddique, Md Abu Bakr and Liu, Junliang and Singh, Piyush and Islam, Md Jahidul},
+    author={Siddique, Md Abu Bakr and Ramesh, Vaishnav and Liu, Junliang and Singh, Piyush and Islam, Md Jahidul},
     title={UStyle: Waterbody Style Transfer of Underwater Scenes by Depth-Guided Feature Synthesis},
-    journal={ArXiv Preprint},
+    journal={Accepted for publication in the IEEE Journal of Oceanic Engineering (JOE)},
     year={2025}
 }
   </pre>
