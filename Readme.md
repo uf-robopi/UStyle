@@ -49,6 +49,7 @@
 ---
 
 <h2>Bibliography</h2>
+<p><em>This work has been accepted for publication in the IEEE Journal of Oceanic Engineering (JOE).</em></p>
 <div id="bibtex">
   <pre>
 @article{siddique2025ustyle,
