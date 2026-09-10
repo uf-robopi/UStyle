@@ -1,4 +1,6 @@
-# **UStyle: Waterbody Style Transfer of Underwater Scenes by Depth-Guided Feature  Synthesis**
+# **UStyle: Waterbody Style Transfer of Underwater Scenes by Depth-Guided Feature  Synthesis** <br>
+Md Abu Bakr Siddique, Vaishnav Ramesh, Junliang Liu, Piyush Singh, Md Jahidul Islam
+
 <div align="center">
   <img src="./model.png" alt="UStyle intro" width="700">
 </div>
